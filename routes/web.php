@@ -13,4 +13,6 @@ Route::post('/resolver-cuadratica', [CuadraticaController::class, 'resolverCuadr
  Route::get('/Resta/{num1}/{num2}',[OperacionesController::class,'Resta']);
  Route::get('/multiplicacion/{num1}/{num2}',[OperacionesController::class,'multiplicacion']);
  Route::get('/division/{num1}/{num2}',[OperacionesController::class,'division']);
- 
+ Route::get('/product/create',[ProductController::class,'create']);
+ Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+

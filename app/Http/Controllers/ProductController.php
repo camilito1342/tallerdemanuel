@@ -6,10 +6,17 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function saludo(){
 
-        return view('product.vista1');
+    public function create (){
 
+        return view('product.create');
 
     }
+
+    public function store(Request $request){
+
+        return $request;
+    }
+
+
 }
